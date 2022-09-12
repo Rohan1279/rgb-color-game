@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+#rgb-heading{
+    text-align: center;
+    background-color: cornflowerblue;
+    line-height: 50px;
+    transition: all;
+}
+#rgb-container{
+    font-size: 40px;
+}
+#colors-options, #colors-options>div{
+    display: flex;
+    justify-content: space-around;
+    background-color: tomato;
+    
+}
+#game-mode>h2{
+    margin-inline: 10px;
+}
+#random-colors-container{
+    background-color: antiquewhite;
+    padding-top: 25px;
+    width: 75%;
+    margin-inline: auto;
+    height: 385px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px; 
+    transition: 1s all;   
+}
+.random-colors{
+    width: 120px;
+    height: 120px;
+    margin-inline: auto;
+    /* background-color: rgb(219, 228, 243); */
+    border-radius: 10px;
+    transition: 1s all;   
+
+}
