@@ -52,13 +52,17 @@ const newColor = document.getElementById("new-color").addEventListener("click", 
         if (pickedColor !== randomSelectedColor) {
             
             color.style.visibility  = 'hidden';
+            // color.style.visibility  = document.getElementById('random-colors-container').style.backgroundColor;
+            // console.log(document.getElementById('random-colors-container').style.backgroundColor)
         }
         else{
             console.log('matched')
             const rgbHeading = document.getElementById('rgb-heading')
-            // document.header.style.backgroundColor =
+         
             rgbHeading.style.backgroundColor = randomSelectedColor
-            // console.log(rgbHeading)
+            // rgbHeading.style.backgroundColor = document.getElementById('random-colors-container').style.backgroundColor
+
+        
         }
        
         // console.log(color)

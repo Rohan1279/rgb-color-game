@@ -5,7 +5,9 @@
     text-align: center;
     background-color: cornflowerblue;
     line-height: 50px;
-    transition: all;
+    transition: all .5s;
+    animation: append-animate .3s linear;
+
 }
 #rgb-container{
     font-size: 40px;
@@ -36,6 +38,15 @@
     margin-inline: auto;
     /* background-color: rgb(219, 228, 243); */
     border-radius: 10px;
-    transition: 1s all;   
-
+    animation: append-animate .3s linear;
+}
+@keyframes append-animate {
+    from {
+        /* transform: scale(0); */
+        opacity: 0;
+    }
+    to{
+        /* transform: scale(1); */
+        /* opacity: 1; */
+    }
 }
